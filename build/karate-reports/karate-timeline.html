@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[1:12]","start":1750435897901,"end":1750435899013,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[1:12] 11:11:37.901-11:11:39.013 T-API-BDR-100-CA01 Retrieve characters"},{"id":2,"group":2,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[2:19]","start":1750435897901,"end":1750435899035,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[2:19] 11:11:37.901-11:11:39.035 T-API-BDR-100-CA02 Retrieve character by ID"},{"id":3,"group":3,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[3:29]","start":1750435897901,"end":1750435899034,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[3:29] 11:11:37.901-11:11:39.034 T-API-BDR-100-CA03 Create a new character"},{"id":4,"group":4,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[4:43]","start":1750435897901,"end":1750435899034,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[4:43] 11:11:37.901-11:11:39.034 T-API-BDR-100-CA04 Attempt to create an existing character"},{"id":5,"group":5,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[5:54]","start":1750435897901,"end":1750435899034,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[5:54] 11:11:37.901-11:11:39.034 T-API-BDR-100-CA05 Attempt to create an invalid character"},{"id":6,"group":1,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[6:65]","start":1750435899027,"end":1750435899287,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[6:65] 11:11:39.027-11:11:39.287 T-API-BDR-100-CA06 Attempt to retrieve a non-existent character"},{"id":7,"group":4,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[7:74]","start":1750435899061,"end":1750435899313,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[7:74] 11:11:39.061-11:11:39.313 T-API-BDR-100-CA07 Update character details"},{"id":8,"group":3,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[8:86]","start":1750435899049,"end":1750435899283,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[8:86] 11:11:39.049-11:11:39.283 T-API-BDR-100-CA08 Attempt to update an existing character with the same name"},{"id":9,"group":5,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[9:97]","start":1750435899050,"end":1750435899545,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[9:97] 11:11:39.050-11:11:39.545 T-API-BDR-100-CA09 Delete a character"},{"id":10,"group":2,"content":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[10:112]","start":1750435899043,"end":1750435899300,"title":"src\/test\/java\/com\/examen\/features\/marvel-api\/karate-test[10:112] 11:11:39.043-11:11:39.300 T-API-BDR-100-CA10 Attempt to delete a non-existent character"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

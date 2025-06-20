@@ -1,0 +1,399 @@
+11:11:36.012 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:11:36.025 [Test worker] WARN  com.intuit.karate.Suite - failed to backup existing dir: build\karate-reports
+11:11:37.998 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:37.998 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:37.998 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:37.998 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:37.998 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:38.590 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters/1
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:11:38.590 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:11:38.592 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ironman","alterego":"Tony Stark","description":"Traje inteligente","powers":["fly","gadgets"]}
+
+11:11:38.592 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 147
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"1b89e213-7581-4489-a502-daf500a2790d","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]}
+
+11:11:38.592 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 18
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ironman"}
+
+11:11:38.984 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 384
+1 < 400
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"description":"Description is required","powers":"Powers are required","alterego":"Alterego is required"}
+
+11:11:38.984 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 385
+1 < 400
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"error":"Character name already exists"}
+
+11:11:38.984 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 385
+1 < 200
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"id":1,"name":"Ironman","alterego":"Tony Stark 2.0","description":"Traje inteligente","powers":["fly","gadgets","force"]}
+
+11:11:38.984 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 384
+1 < 201
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"id":12,"name":"1b89e213-7581-4489-a502-daf500a2790d","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]}
+
+11:11:38.984 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 385
+1 < 200
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+[{"id":1,"name":"Ironman","alterego":"Tony Stark 2.0","description":"Traje inteligente","powers":["fly","gadgets","force"]},{"id":3,"name":"4c462f83-193b-44d6-b743-8256c6714075","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]},{"id":4,"name":"12109487-4ff9-4111-a570-49abc9705682","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]},{"id":5,"name":"01de4a98-e6ed-401e-9fac-60ec9097c00c","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]},{"id":6,"name":"b9716a4b-f818-4eb2-9077-a145ecaf970e","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]},{"id":8,"name":"450e87b7-2bf6-40cd-aaa8-7f2fc5bdb820","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]},{"id":10,"name":"48089736-4391-4624-b06a-cb2c536baa98","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]}]
+
+11:11:39.000 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "id": 12,
+  "name": "1b89e213-7581-4489-a502-daf500a2790d",
+  "alterego": "Soy un anonimo",
+  "description": "Un personaje anónimo de prueba",
+  "powers": [
+    "anonimoato"
+  ]
+}
+ 
+11:11:39.000 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
+  "description": "Description is required",
+  "powers": "Powers are required",
+  "alterego": "Alterego is required"
+}
+ 
+11:11:39.000 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "name": "Ironman",
+  "alterego": "Tony Stark 2.0",
+  "description": "Traje inteligente",
+  "powers": [
+    "fly",
+    "gadgets",
+    "force"
+  ]
+}
+ 
+11:11:39.004 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "error": "Character name already exists"
+}
+ 
+11:11:39.006 [pool-1-thread-3] INFO  com.intuit.karate - [print] 12 
+11:11:39.006 [pool-1-thread-2] INFO  com.intuit.karate - [print] 1 
+11:11:39.010 [pool-1-thread-1] INFO  com.intuit.karate - [print] [
+  {
+    "id": 1,
+    "name": "Ironman",
+    "alterego": "Tony Stark 2.0",
+    "description": "Traje inteligente",
+    "powers": [
+      "fly",
+      "gadgets",
+      "force"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "4c462f83-193b-44d6-b743-8256c6714075",
+    "alterego": "Soy un anonimo",
+    "description": "Un personaje anónimo de prueba",
+    "powers": [
+      "anonimoato"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "12109487-4ff9-4111-a570-49abc9705682",
+    "alterego": "Soy un anonimo",
+    "description": "Un personaje anónimo de prueba",
+    "powers": [
+      "anonimoato"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "01de4a98-e6ed-401e-9fac-60ec9097c00c",
+    "alterego": "Soy un anonimo",
+    "description": "Un personaje anónimo de prueba",
+    "powers": [
+      "anonimoato"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "b9716a4b-f818-4eb2-9077-a145ecaf970e",
+    "alterego": "Soy un anonimo",
+    "description": "Un personaje anónimo de prueba",
+    "powers": [
+      "anonimoato"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "450e87b7-2bf6-40cd-aaa8-7f2fc5bdb820",
+    "alterego": "Soy un anonimo",
+    "description": "Un personaje anónimo de prueba",
+    "powers": [
+      "anonimoato"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "48089736-4391-4624-b06a-cb2c536baa98",
+    "alterego": "Soy un anonimo",
+    "description": "Un personaje anónimo de prueba",
+    "powers": [
+      "anonimoato"
+    ]
+  }
+]
+ 
+11:11:39.047 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:39.050 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:39.051 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:39.053 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:39.060 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters/9999
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:11:39.061 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > PUT http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters/999
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ironman","alterego":"Tony Stark","description":"Traje inteligente","powers":["fly","gadgets"]}
+
+11:11:39.064 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:39.067 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters/9999
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:11:39.084 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters/1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 115
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ironman","alterego":"Tony Stark 2.0","description":"Traje inteligente","powers":["fly","gadgets","force"]}
+
+11:11:39.084 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 147
+1 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"277fc870-6d82-4cf2-8402-12699108797d","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]}
+
+11:11:39.274 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 212
+1 < 404
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"error":"Character not found"}
+
+11:11:39.280 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "error": "Character not found"
+}
+ 
+11:11:39.281 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 220
+1 < 404
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"error":"Character not found"}
+
+11:11:39.283 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "error": "Character not found"
+}
+ 
+11:11:39.293 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 226
+1 < 404
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"error":"Character not found"}
+
+11:11:39.296 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "error": "Character not found"
+}
+ 
+11:11:39.297 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 200
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"id":1,"name":"Ironman","alterego":"Tony Stark 2.0","description":"Traje inteligente","powers":["fly","gadgets","force"]}
+
+11:11:39.300 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "name": "Ironman",
+  "alterego": "Tony Stark 2.0",
+  "description": "Traje inteligente",
+  "powers": [
+    "fly",
+    "gadgets",
+    "force"
+  ]
+}
+ 
+11:11:39.305 [pool-1-thread-4] INFO  com.intuit.karate - [print] [
+  "fly",
+  "gadgets",
+  "force"
+]
+ 
+11:11:39.307 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 220
+1 < 201
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+1 < Via: 1.1 vegur
+{"id":13,"name":"277fc870-6d82-4cf2-8402-12699108797d","alterego":"Soy un anonimo","description":"Un personaje anónimo de prueba","powers":["anonimoato"]}
+
+11:11:39.311 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
+  "id": 13,
+  "name": "277fc870-6d82-4cf2-8402-12699108797d",
+  "alterego": "Soy un anonimo",
+  "description": "Un personaje anónimo de prueba",
+  "powers": [
+    "anonimoato"
+  ]
+}
+ 
+11:11:39.321 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > DELETE http://bp-se-test-cabcd9b246a5.herokuapp.com/rbardale/api/characters/13
+2 > Host: bp-se-test-cabcd9b246a5.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:11:39.542 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 219
+2 < 204
+2 < Server: Cowboy
+2 < Content-Length: 0
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750435898&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=GA38LRBEiHmzmpBCr3xTmUrTVv8CMvLeEGlN060G6Cg%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < Connection: keep-alive
+2 < Date: Fri, 20 Jun 2025 16:11:38 GMT
+2 < Via: 1.1 vegur
+
+
+11:11:39.545 [pool-1-thread-5] INFO  com.intuit.karate - [print]  
+11:11:41.073 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/com/examen/features/marvel-api/karate-test.feature
+11:11:41.904 [Test worker] INFO  n.m.cucumber.ReportParser - File 'C:\Users\RolandoBardales\Desktop\hackaton\bp-dev-test\build\karate-reports\src.test.java.com.examen.features.marvel-api.karate-test.json' contains 1 feature(s)
